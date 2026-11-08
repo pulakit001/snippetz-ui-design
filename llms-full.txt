@@ -1,0 +1,991 @@
+# Snippetz Labs — Product UI Design Skill (full reference bundle)
+
+This file bundles SKILL.md and every reference document into a single fetch
+for AI agents. It is generated from the individual files; regenerate it with
+'scripts/build-llms.sh' after editing any source document.
+
+Useful URLs:
+- Index with per-file summaries: https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/llms.txt
+- https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/SKILL.md
+- https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/visual-language.md
+- https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/pattern-library.md
+- https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/anti-patterns.md
+- https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/implementation-playbook.md
+- https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/quality-gate.md
+- https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/prompt-recipes.md
+
+=======================================================================
+FILE: SKILL.md
+URL:  https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/SKILL.md
+=======================================================================
+
+---
+name: snippetz-ui-design
+description: Designs websites, web apps, dashboards, and product interfaces with the Snippetz Labs visual system. Use for new UI, redesigns, UX polish, component styling, and screenshot-inspired builds.
+---
+
+# Snippetz Labs — Product UI Design Skill
+
+You are the product designer and front-end design engineer for Snippetz Labs. Your job is to turn product intent into interfaces that feel deliberate, modern, highly usable, and visually memorable. Treat this skill as the design DNA behind Snippetz Labs products—not as a rigid template to copy into every app.
+
+**Core principle: engineered clarity with editorial character.** Every screen should make the important thing obvious, make complex information feel composed, and use visual character in service of the product.
+
+## 1. What this skill governs
+
+Use this skill for:
+- Marketing websites, product landing pages, launch pages, and product storytelling.
+- Web applications, SaaS products, workspaces, admin panels, dashboards, and analytics.
+- Education, productivity, finance, health, operations, monitoring, and AI-native interfaces.
+- New interfaces, full redesigns, visual polish, responsive passes, component systems, and design-system implementation.
+- Turning screenshots, moodboards, rough wireframes, and written descriptions into a coherent production interface.
+
+This skill governs **visual and interaction quality**. The product's actual purpose, users, information architecture, business logic, and accessibility requirements govern the design decisions. Never sacrifice usability to imitate a reference.
+
+## 2. The Snippetz design philosophy
+
+Apply these principles together:
+
+1. **Purpose before decoration.** Start with the user, task, content hierarchy, and information architecture. Every prominent visual element must communicate, guide, or clarify.
+2. **Editorial hierarchy.** Use confident typography, considered line lengths, clear scale contrast, strong alignment, and intentional whitespace. Screens should read like a designed composition, not a pile of components.
+3. **Structured asymmetry.** Prefer deliberate variation in column widths, card sizes, and visual weight over repetitive grids. Asymmetry must still feel balanced and navigable.
+4. **Modular information.** Compose complex products from related panels, cards, charts, tables, controls, and summaries. Vary their size and density according to importance.
+5. **Calm surfaces, vivid signals.** Keep most of the interface neutral. Use one primary accent to direct attention and reserve secondary hues for meaningful data categories or states.
+6. **Data is a first-class visual.** Metrics, trends, status, and comparisons deserve clear hierarchy and context—not tiny labels buried inside decorative cards.
+7. **Depth with restraint.** Use tonal layers, subtle borders, soft shadows, gradients, blur, or dimensional illustrations only when they establish hierarchy or a product-specific atmosphere.
+8. **A product has its own skin.** Maintain the Snippetz design DNA while adapting theme, density, imagery, and interaction patterns to the product's audience and domain.
+9. **Finish the experience.** Design loading, empty, error, success, hover, focus, active, disabled, and responsive states—not only the ideal desktop screenshot.
+10. **Avoid the generic AI look.** Reject unearned visual clichés, formulaic page recipes, vague marketing copy, fabricated proof, and decorative interactions. Make every design choice specific to the product and defensible by its users, content, or behavior. Use the full [anti-patterns checklist](references/anti-patterns.md) as a required review—not as a rigid ban on otherwise useful patterns.
+
+## 3. Visual reference interpretation
+
+The supplied references are inspiration for principles, not assets to trace or interfaces to reproduce pixel-for-pixel.
+
+- **Admissions workspace:** near-black canvas, clear navigation, a concise AI-generated context summary, and structured recommendation cards with fit scores and supporting evidence. Take the strong hierarchy and information density; do not copy its exact layout or labels.
+- **Metabolic-health experience:** restrained black surfaces, editorial all-caps headlines, fine data visualizations, compact feature modules, and soft iridescent/gradient device surfaces. Take the feeling of precision and continuous monitoring.
+- **Immersive startup hero:** oversized lightweight type, deep green atmospheric forms, dimensional objects, and floating metric panels. Take the cinematic introduction and layered depth for suitable marketing moments.
+- **Sales analytics dashboard:** dark modular panels, a highly legible chart hierarchy, restrained fluorescent accents, and a small number of high-contrast metric tiles. Take its data-first composition.
+- **Greenhouse monitoring:** light botanical surfaces, a spatial/isometric central visualization, a confident alert panel, and a schedule/activity column. Take the domain-specific visual storytelling and clear operational status.
+
+**Synthesize, do not collage.** Do not combine every reference's effects on one page. Choose the visual behavior that makes sense for the product, then apply it consistently. A distinctive result comes from product-specific composition and content, not from stacking fashionable effects.
+
+Before designing a full page, review [anti-patterns.md](references/anti-patterns.md). It documents 100 common visual, structural, copy, credibility, and usability patterns that can make an interface feel AI-generated. Avoid them when they are unearned or formulaic; retain a pattern only when it has a clear product-specific reason.
+
+## 4. Choose a product skin before styling
+
+First determine what the product is, who uses it, what they do most often, how much information they handle, and what emotional tone builds trust. Then choose a skin. The themes below are starting points, not mandatory color palettes.
+
+### A. Obsidian — focused, technical, data-rich
+
+Use for productivity workspaces, developer tools, analytics, education management, finance operations, and command-center interfaces.
+
+- Canvas: near-black charcoal, not absolute black everywhere.
+- Surfaces: progressively lighter charcoal layers with subtle separators.
+- Text: soft white for primary content; cool neutral grey for secondary content.
+- Accent: choose one signal color—fresh lime, soft green, or a restrained electric hue.
+- Charts: neutral series by default; accent only the selected, important, or anomalous series.
+- Mood: precise, quiet, capable, focused.
+
+### B. Botanical — calm, organic, trustworthy
+
+Use for wellness, environment, sustainability, agriculture, lifestyle, and products where nature or care is part of the subject.
+
+- Canvas: warm off-white or pale green-grey.
+- Surfaces: white and very pale sage, with clear separation.
+- Text: deep green-black; muted olive-grey for secondary content.
+- Accent: grounded plant green. Use a warmer alert color only for actual alert states.
+- Visuals: botanical imagery, spatial diagrams, organic data marks, and gentle green transitions when useful.
+- Mood: clear, grounded, alive—not childish or overly decorative.
+
+### C. Atmospheric — expressive, cinematic, brand-led
+
+Use primarily for landing-page heroes, launches, and brand moments where an emotional first impression matters.
+
+- Build a deep, controlled base with one atmospheric color family such as forest/emerald, ink/blue, or graphite/warm neutral.
+- Use one oversized headline and one clear action hierarchy.
+- Add one strong dimensional or abstract visual, not a collection of unrelated 3D objects.
+- Floating cards or metrics must relate to the product and remain readable.
+- Keep the rest of the page more restrained so the hero has room to breathe.
+
+### D. Hybrid — campaign outside, product inside
+
+A marketing site and the logged-in application do not need identical surfaces. A product may use an Atmospheric landing page, an Obsidian workspace, and a Botanical reporting view. Keep them related through typography, spacing, shape language, icon style, and accent logic.
+
+When the user has established an existing brand system, preserve it unless asked to rethink it. If the product does not fit these starting themes, create a new theme using the same principles and document the choice.
+
+## 5. Default design tokens
+
+Start from these semantic tokens, then tune them to the product and existing codebase. Do not scatter raw hex values across components. If a project already has a token system, extend or map it instead of creating a competing system.
+
+### Obsidian starter palette
+
+| Token | Starter value | Purpose |
+|---|---:|---|
+| `--color-canvas` | `#0B0D0C` | App/page background |
+| `--color-surface` | `#141715` | Main panels and cards |
+| `--color-surface-raised` | `#1C201E` | Popovers and elevated modules |
+| `--color-surface-soft` | `#222725` | Hover and secondary surfaces |
+| `--color-text` | `#F2F4F1` | Primary text |
+| `--color-text-muted` | `#A0A6A0` | Secondary text |
+| `--color-text-subtle` | `#737B74` | Tertiary metadata; never for essential text at low contrast |
+| `--color-border` | `#2B322D` | Quiet dividers and outlines |
+| `--color-accent` | `#A7F078` | Primary action and key signal |
+| `--color-accent-strong` | `#D5FF47` | Rare high-priority highlight |
+| `--color-danger` | `#F07474` | Error and destructive state |
+| `--color-warning` | `#E9B85B` | Warning state |
+| `--color-success` | `#82D99A` | Positive state |
+
+### Botanical starter palette
+
+| Token | Starter value | Purpose |
+|---|---:|---|
+| `--color-canvas` | `#F3F6F0` | Main background |
+| `--color-surface` | `#FFFFFF` | Cards and panels |
+| `--color-surface-soft` | `#E7EEDF` | Secondary panels |
+| `--color-surface-raised` | `#F9FBF7` | Floating surfaces |
+| `--color-text` | `#182119` | Primary text |
+| `--color-text-muted` | `#657064` | Secondary text |
+| `--color-border` | `#D9E1D5` | Quiet outlines |
+| `--color-accent` | `#3F9D35` | Primary action and key signal |
+| `--color-accent-strong` | `#267D27` | Strong emphasis |
+
+### Shared geometry and layout tokens
+
+| Token | Starting point | Guidance |
+|---|---:|---|
+| Spacing base | 4px | Use a consistent 4px/8px rhythm |
+| Content width | 1200–1480px | Wider only when data or product context needs it |
+| Desktop page gutter | 32–48px | Reduce progressively on smaller screens |
+| Card padding | 20–28px | Dense data cards may use 16–20px |
+| Card radius | 18–24px | Use less rounding for dense tables and technical surfaces |
+| Control radius | 10–14px | Pills only for compact statuses or genuinely pill-shaped actions |
+| Floating overlay radius | 14–20px | Maintain clear separation and shadow hierarchy |
+| Control height | 40–48px | Keep repeated form controls consistent |
+| Focus ring | 2px visible ring | High contrast and never removed without replacement |
+
+These are starting values, not pixel commandments. For type, responsive behavior, and component details, read [visual-language.md](references/visual-language.md).
+
+## 6. Typography rules
+
+- Prefer the typography already installed in the project when it is good. Otherwise use a clean contemporary sans such as Geist or Inter, with a robust system fallback.
+- Do not add a font dependency or remote font request unless it is justified and compatible with the project.
+- Use lightweight display typography for expressive headlines, but keep body text, controls, and dense information comfortably readable.
+- Create hierarchy through size, weight, line length, spacing, and contrast—not by assigning a different font to every section.
+- Use tabular numerals for financial values, scores, counters, and rapidly changing metrics.
+- Use uppercase labels sparingly. They are useful for short metadata and section eyebrows, not paragraphs.
+- Avoid ultra-thin type at small sizes, excessively tight tracking on body copy, and long all-caps blocks.
+
+## 7. Composition and component behavior
+
+Think in page regions, not isolated components. Give each screen one dominant purpose and an obvious scan path.
+
+- Establish a clear shell: navigation, page title/context, primary action, content region, and optional utility/assistant surface.
+- Use grids as a foundation, then vary column spans and card heights to create a purposeful composition.
+- A summary or insight can span the content width; detailed metrics can live in smaller cards; the main chart or visualization should receive the space its importance warrants.
+- Keep related data together. Put labels next to their values, and show units, time ranges, comparison periods, and data provenance where relevant.
+- Use alignment and repeated spacing to make complex screens feel calm.
+- Avoid giving every card identical visual weight. Use contrast, size, and placement to establish priority.
+- Use navigation patterns appropriate to the product: a compact top bar, persistent side rail, full sidebar, or mobile tab bar. Do not add navigation chrome merely because a reference contains it.
+- Use icons consistently, preferably from the project's existing icon set. Avoid mixing outline, solid, emoji, and custom icon styles without a reason.
+
+For reusable page and component patterns, read [pattern-library.md](references/pattern-library.md).
+
+## 8. Interaction and motion
+
+- Every visible control must have a real, understandable outcome. Do not ship decorative buttons, fake menus, dead tabs, or inputs that do nothing.
+- Provide hover, focus-visible, active, selected, disabled, loading, error, empty, and success states as appropriate.
+- Prefer direct manipulation and inline feedback for common actions. Confirm destructive or irreversible actions.
+- Use concise transitions, usually around 140–240ms, with restrained easing. Animate state changes and hierarchy, not every element.
+- Use charts and meters to communicate actual values and trends. Label them and provide a textual equivalent where visual interpretation is not sufficient.
+- Respect `prefers-reduced-motion`. Avoid parallax, continuous motion, and large animated entrances unless the experience genuinely benefits.
+- For AI interfaces, distinguish user input, assistant output, system status, citations/sources, and generated recommendations. Make uncertainty and loading states visible; never imply that generated information is verified when it is not.
+
+## 9. Responsive and accessible by default
+
+- Design mobile as a real layout, not a desktop page squeezed into a narrow viewport.
+- Reflow multi-column grids; collapse or replace desktop navigation; move secondary panels into clear sequential sections; and keep primary actions reachable.
+- Convert wide tables into responsive tables with intentional overflow or compact record cards. Never silently hide important columns.
+- Avoid fixed-width content and horizontal page overflow.
+- Use semantic landmarks and headings, associated form labels, keyboard-operable controls, visible focus states, and useful alternative text.
+- Target WCAG 2.2 AA contrast for meaningful text and controls. Do not use color alone to communicate status.
+- Maintain comfortable touch targets and spacing for interactive elements.
+
+Read [visual-language.md](references/visual-language.md) for responsive and accessibility specifics.
+
+## 10. How to execute a design task
+
+Follow this sequence. Scale the depth to the task, but do not skip understanding the product.
+
+### Step 1 — Understand the brief
+
+Identify the product, audience, main user job, key actions, content/data, target platform, required routes, visual references, brand constraints, and acceptance criteria. Use known context; do not ask the user to repeat what is already available. Ask only for a missing detail that blocks a consequential decision. Otherwise make and state a sensible assumption.
+
+### Step 2 — Inspect before changing
+
+For an existing project, inspect its structure, framework, package scripts, installed component and icon libraries, current routes, global styles, and existing design tokens. Read project guidance such as `AGENTS.md`, `README`, or equivalent when present. Identify what works and what must remain intact. Do not replace the stack or add dependencies without a clear reason.
+
+For a new project, use the available stack and conventions. Establish the smallest coherent design system before building many screens.
+
+### Step 3 — Read visual references intelligently
+
+Extract palette, typography, density, geometry, hierarchy, imagery, chart style, interaction cues, and overall mood. Separate what is essential from what is merely decorative. Translate references into a product-specific direction; do not copy proprietary branding or reproduce a screenshot mechanically. Cross-check the proposed direction against [anti-patterns.md](references/anti-patterns.md) so the result does not fall back on generic AI-site conventions.
+
+### Step 4 — Choose and document the skin
+
+Choose Obsidian, Botanical, Atmospheric, or a justified Hybrid/new theme. Define semantic color, typography, spacing, radius, border, shadow, and motion tokens. Keep the system coherent across routes and components.
+
+### Step 5 — Design the information architecture
+
+Map the page shell, hierarchy, primary and secondary actions, content groups, navigation, and responsive transformations. Make the first viewport communicate the product's purpose immediately. In data-heavy products, show the most actionable information first.
+
+### Step 6 — Implement the complete interface
+
+Build reusable components that match the project's conventions. Implement real interactions and meaningful states. Use realistic content based on available product information; never invent customer records, performance outcomes, integrations, or claims. If sample data is necessary, label it as sample data.
+
+### Step 7 — Verify and refine
+
+Run the available lint, type-check, tests, and production build when practical. Inspect the actual rendered result at desktop and mobile sizes when a browser/preview is available. Check alignment, contrast, overflow, text wrapping, focus, active states, and data legibility. Fix the issues found. Do not claim to have visually tested a screen if you only inspected its source code.
+
+### Step 8 — Report clearly
+
+Summarize what changed, the selected visual direction, important interaction/responsive behavior, validation performed, and any known gaps. Be specific and honest.
+
+For implementation details and framework-specific examples, read [implementation-playbook.md](references/implementation-playbook.md). For final review, use [quality-gate.md](references/quality-gate.md) and the 100-item [anti-patterns.md](references/anti-patterns.md).
+
+## 11. Non-negotiable quality rules
+
+- Do not return a generic template when the brief and references call for a distinct visual identity.
+- Do not make every page dark, every card rounded, every section a grid, or every interface look like an analytics dashboard.
+- Do not use gradients, glow, blur, 3D, glassmorphism, or neon as default decoration. Use them selectively and with purpose.
+- Do not create visual hierarchy through tiny low-contrast text or oversized empty space that hides useful content.
+- Do not overuse pills, badges, dividers, shadows, borders, or nested cards.
+- Do not use placeholder lorem ipsum or fake data to make a screen appear complete.
+- Do not remove existing working functionality while styling a project.
+- Do not call a page finished until its important states and responsive behavior have been considered.
+- Do not ship an unearned combination of the clichés catalogued in [anti-patterns.md](references/anti-patterns.md). Run that audit before delivery and remove, replace, or explicitly justify each relevant pattern.
+- Do not fabricate credibility or product reality: customer logos, testimonials, people, metrics, awards, integrations, certifications, press mentions, activity, and case studies must be genuine or clearly labelled as illustrative.
+- Do not use motion, gradients, glass, glow, parallax, or 3D effects as substitutes for hierarchy, feedback, or useful interaction.
+- Do not treat a successful desktop screenshot as proof of a finished interface; verify real controls, content, tablet/mobile layouts, accessibility, and system states.
+
+## 12. Quick task calibration
+
+| User request | What to do |
+|---|---|
+| “Build this app/site” | Understand product and routes, choose skin, establish tokens, build the real flow and responsive states. |
+| “Make it look like these references” | Extract common design principles, then adapt them to the product; do not clone screenshots. |
+| “Improve the UI” | Inspect the current product, preserve working behavior, identify the highest-impact visual/UX issues, and fix them consistently. |
+| “Redesign this dashboard” | Prioritize scanability, data hierarchy, filters, chart clarity, responsive behavior, and status states. |
+| “Create a landing page” | Lead with product value, one strong visual idea, clear proof/context, and a focused conversion path. |
+| “Make it more premium” | Improve typography, spacing, composition, material contrast, micro-details, and consistency—not merely add gradients or blur. |
+| “Apply the Snippetz style everywhere” | Create/update shared tokens and primitives, then propagate them across routes without flattening product-specific needs. |
+
+**Final test:** the interface should feel unmistakably considered, easy to understand, appropriate to its domain, and complete enough to use—not merely attractive in a screenshot.
+
+
+=======================================================================
+FILE: references/visual-language.md
+URL:  https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/visual-language.md
+=======================================================================
+
+# Visual Language Reference
+
+This file contains the detailed visual rules for the Snippetz Labs design skill. Load it when defining or refining a theme, page composition, type scale, responsive behavior, or accessible visual treatment.
+
+## Contents
+
+- Design character
+- Typography scale
+- Layout and spacing
+- Color and surfaces
+- Borders, shadows, and depth
+- Motion
+- Responsive behavior
+- Accessibility
+
+## 1. Design character
+
+The desired result sits between an editorial digital publication and a finely engineered product interface. It should be expressive enough to feel branded and structured enough to support real work.
+
+Use contrast in a controlled way:
+- Large, quiet canvas areas against compact, information-rich modules.
+- Lightweight display headlines against sturdy labels and body text.
+- Calm neutral surfaces against one clear active signal.
+- A few distinctive shapes or illustrations against a restrained component system.
+
+Avoid a UI that is uniformly loud. Give the eye one primary entry point, a clear sequence, and enough breathing room to understand the data.
+
+## 2. Typography scale
+
+Use the project's installed font first. If none is suitable, prefer Geist or Inter with system fallbacks.
+
+| Role | Desktop starting range | Mobile starting range | Weight / behavior |
+|---|---:|---:|---|
+| Display hero | 56–88px | 40–56px | 300–400; tight tracking; controlled line length |
+| Page title | 34–48px | 28–36px | 400–550 |
+| Section title | 22–30px | 20–26px | 450–600 |
+| Card title | 15–18px | 15–17px | 550–650 |
+| Body | 14–16px | 14–16px | 400–450; line-height 1.45–1.65 |
+| Supporting | 12–14px | 12–14px | 400; maintain contrast |
+| Eyebrow / metadata | 10–12px | 10–12px | 500–650; slight tracking; short text only |
+| KPI | Contextual, often 28–44px | 26–36px | Tabular numerals; clear unit and label |
+
+Rules:
+- Use `clamp()` for fluid display sizing when appropriate.
+- Keep body copy at a readable measure; do not span the entire desktop width for long paragraphs.
+- Headlines can be tight; body text should not be tightly tracked.
+- Avoid thin weights for small text, low contrast, or complex backgrounds.
+- Use one coherent type family unless there is a compelling brand reason for a second.
+- Keep a clear hierarchy between number, unit, label, and comparison.
+
+## 3. Layout and spacing
+
+### Grid
+
+- Use a 12-column grid for wide desktop product surfaces when it helps.
+- Use 8 columns or simpler flexible layouts for mid-sized screens.
+- On mobile, prefer one primary column with deliberate exceptions for compact paired metrics.
+- Set a max content width appropriate to the product, usually around 1200–1480px.
+- Align page titles, content blocks, and footers to a consistent container edge.
+
+### Spacing rhythm
+
+Use a 4px base with common steps such as 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, and 80px. Prefer consistent relationships over arbitrary values.
+
+### Density
+
+Choose density based on user intent:
+- **Focused / consumer:** more whitespace, fewer simultaneous panels, obvious next action.
+- **Operational / professional:** moderate density, compact controls, visible status and context.
+- **Analytical / expert:** high information density, but group data with strong labels and alignment; do not shrink type as the primary density strategy.
+
+### Asymmetry
+
+Create visual interest using intentional span variation, a dominant visualization, or a different-width sidebar. Maintain a clear grid and predictable alignment. Avoid random offsets that make the page feel broken.
+
+## 4. Color and surfaces
+
+### Semantic color roles
+
+Build themes from roles, not ad hoc color choices:
+
+- `canvas`: page background.
+- `surface`: default content panel.
+- `surface-raised`: popover, menu, or floating panel.
+- `surface-muted`: secondary content or subtle grouping.
+- `text`: primary text.
+- `text-muted`: secondary text.
+- `text-subtle`: tertiary metadata, only where contrast remains sufficient.
+- `border`: outline and separator.
+- `accent`: primary interactive or selected state.
+- `accent-contrast`: text/icon color on accent.
+- `success`, `warning`, `danger`, `info`: meaningful semantic states.
+
+Do not encode the same meaning with different colors in different screens. Semantic states must remain recognizable across light and dark themes.
+
+### Accent budget
+
+- Pick one dominant accent for a product skin.
+- A second hue is allowed when it represents a real data category or status.
+- Use high-saturation colors on a small area: selected controls, active chart series, critical KPIs, or key calls to action.
+- Never use the accent on every icon, border, title, and card simultaneously.
+
+### Contrast and layering
+
+Separate surfaces using a combination of luminance, subtle border, and spacing. Do not rely only on shadows. On dark interfaces, avoid a stack of nearly identical black cards; make levels perceptibly different. On light interfaces, use restrained borders and soft tonal panels instead of heavy grey shadows.
+
+### Gradients and effects
+
+Use gradients for atmosphere, illustration, or an important focal surface. Keep text on gradients readable. Blur and glass effects should be limited to a small number of floating overlays and must not obscure content. Avoid glowing every action.
+
+## 5. Borders, shadows, and depth
+
+- Use thin, low-contrast borders for structure; stronger borders only for focus, selected, or critical states.
+- Use shadows to communicate elevation and layering, not to outline every card.
+- Keep shadows diffuse and low-opacity, especially on dark surfaces.
+- Large card radius is a brand characteristic, not a requirement for every primitive. Dense tables, chart frames, and input groups can use smaller radii.
+- Avoid putting a card inside a card inside another card unless each level has a distinct structural purpose.
+
+## 6. Motion
+
+- Typical micro-interaction: 140–200ms.
+- More noticeable panel or layout transition: 180–260ms.
+- Use easing that feels responsive and controlled; avoid springiness unless the brand explicitly supports playful motion.
+- Animate opacity and transform where practical. Avoid expensive layout animation on dense dashboards.
+- Do not animate live data so frequently that it becomes distracting.
+- Respect reduced-motion preferences; remove nonessential movement and parallax.
+
+## 7. Responsive behavior
+
+Treat these as starting breakpoints, not strict rules: small mobile under 480px, large mobile/small tablet 480–767px, tablet 768–1023px, desktop 1024px and above.
+
+### Mobile decisions
+
+- Replace a persistent desktop sidebar with a compact header, drawer, or bottom navigation where appropriate.
+- Keep the page title, key status, and main action visible early.
+- Stack a wide hero into a clear text-then-visual or visual-then-text sequence.
+- Move supporting analytics below the primary task rather than shrinking the entire dashboard.
+- Give charts simplified labels and horizontal scrolling only inside the chart region when necessary.
+- Use card summaries or accessible table overflow for wide datasets; preserve the information.
+- Avoid fixed bottom elements covering the last content row or keyboard input.
+- Ensure dialogs fit the viewport and remain scrollable with visible actions.
+
+### Verification sizes
+
+At minimum, inspect approximately 1440px desktop, 1024px tablet/compact desktop, and 390px mobile when a preview environment is available. Also check an intermediate width if the layout has a complex breakpoint.
+
+## 8. Accessibility
+
+- Aim for WCAG 2.2 AA contrast: 4.5:1 for normal text and 3:1 for large text and meaningful UI boundaries/graphics where applicable.
+- Use text labels alongside status color. Include icons or wording for status when helpful.
+- Use real buttons for actions and links for navigation.
+- Ensure every input has a programmatic label and useful error text.
+- Support keyboard operation and a visible focus indicator.
+- Use a logical heading order and landmarks.
+- Provide alternative text for meaningful images; mark purely decorative visuals appropriately.
+- Do not communicate chart meaning using color alone; provide labels, patterns, or text summaries.
+- Respect reduced motion and zoom/reflow behavior.
+
+
+=======================================================================
+FILE: references/pattern-library.md
+URL:  https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/pattern-library.md
+=======================================================================
+
+# Product Pattern Library
+
+Use these patterns as adaptable building blocks. Select only the patterns the product needs. Do not add UI just because a pattern exists here.
+
+## Contents
+
+- Marketing and launch pages
+- App shell and navigation
+- Dashboards and analytics
+- Workspaces and data-heavy lists
+- Monitoring and alert interfaces
+- AI-assisted interfaces
+- Forms and multi-step flows
+- States and feedback
+
+## 1. Marketing and launch pages
+
+### Hero
+
+A strong hero typically includes:
+- A short eyebrow or context label when useful.
+- One headline expressing the product's primary outcome.
+- A concise supporting statement that explains what it is and who it helps.
+- One primary CTA and, only when useful, one secondary action.
+- One distinctive visual: product UI, spatial illustration, meaningful metric composition, or restrained abstract art.
+
+Use oversized typography and atmospheric visuals when the brand moment warrants it. The visual should reinforce the message, not compete with it. Avoid vague headlines, multiple equal CTAs, and random floating cards that do not explain the product.
+
+### Supporting story
+
+After the hero, tell a logical story: user problem, product mechanism, feature/value groups, proof or evidence, and the next action. Vary section composition. Do not repeat the same three-card feature grid six times.
+
+### Product visual
+
+Prefer real product UI or an accurate, representative visualization over generic stock imagery. When showing product UI, make its labels and data readable enough to communicate value. Do not invent customer logos, testimonials, awards, user counts, or performance claims.
+
+## 2. App shell and navigation
+
+An application shell should make orientation and common actions predictable.
+
+### Desktop
+
+Choose a top navigation, compact rail, or full sidebar based on route count and task frequency. Keep global navigation visually distinct from page-level controls. Avoid oversized navigation when the content is the primary work surface.
+
+### Mobile
+
+Use a compact top bar, drawer, or bottom navigation. Keep a clear active state. Do not squeeze a desktop sidebar into 64px unless icon-only navigation is genuinely usable and labelled for assistive technology.
+
+### Page header
+
+A typical page header contains breadcrumb/context (when useful), page title, supporting context, and one primary page action. Keep it compact on repeated operational screens.
+
+## 3. Dashboards and analytics
+
+Design dashboards around decisions, not around the number of available metrics.
+
+### Recommended hierarchy
+
+1. Page context and filters/time range.
+2. One concise summary or highest-priority insight.
+3. Key metrics with labels, units, and comparisons.
+4. The dominant trend or analytical visualization.
+5. Supporting breakdowns, detail tables, and recent activity.
+
+### KPI cards
+
+A good KPI module includes the metric, unit, explanatory label, period, and comparison context. Use status color only if it has a defined meaning. Avoid large numbers without labels or context.
+
+### Charts
+
+- Choose chart type based on the question: line for change over time, bar for comparison, stacked bar for composition, scatter for relationships, and so on.
+- Label axes, units, date ranges, and series where needed.
+- Avoid decorative 3D charts, truncated axes that mislead, and gradients that make values harder to compare.
+- Highlight one meaningful series or point; leave the rest quieter.
+- Provide a readable legend and a textual summary or accessible data view.
+- Never fabricate chart values. Mark demonstration data as sample data.
+
+### Filtering
+
+Keep frequently used filters close to the content they affect. Show active filter state, support clearing, and preserve meaningful selections when navigating if the product requires it.
+
+## 4. Workspaces and data-heavy lists
+
+Use for admissions, education, CRM, project operations, catalogs, research tools, and management products.
+
+- Put the task and collection name at the top.
+- Provide search, filters, and sorting near the list.
+- Keep records scannable with a strong primary field and consistently aligned secondary attributes.
+- Use status chips only for concise, standardized states.
+- Include clear empty, loading, no-results, and error experiences.
+- Use a full detail panel or focused detail route for deeper context rather than cramming every field into a card.
+- Keep selection, bulk actions, and pagination discoverable when those behaviors exist.
+
+For recommendation products, distinguish score from explanation. Show why an item is recommended, relevant constraints, and any uncertainty. Do not present a model-generated fit score as objective truth.
+
+## 5. Monitoring and alerts
+
+Use for health-adjacent tracking, environmental monitoring, device status, systems, and operations.
+
+- Make current status and the time of last update immediately visible.
+- Put critical alerts above routine activity; distinguish severity through label, icon, and color.
+- Show the measured variable, unit, threshold or reference context, and trend when available.
+- Use spatial or isometric illustrations only when they help users understand the system or physical environment.
+- Keep schedules, history, and controls in clearly separated regions.
+- Distinguish real-time, estimated, stale, and unavailable data.
+
+Do not imply that an alert is critical merely to attract attention. Severity must follow the product's actual rules.
+
+## 6. AI-assisted interfaces
+
+AI should feel integrated into the product workflow—not pasted on as a generic chatbot widget.
+
+- Place assistance near the relevant task when contextual help is valuable.
+- Make the assistant's scope, input, output, and available actions understandable.
+- Separate generated suggestions from confirmed product data.
+- Make source/citation details accessible when answers rely on retrieved information.
+- Support editing, retrying, copying, and applying suggestions where appropriate.
+- Use concise typing/loading feedback; do not fake progress or pretend an operation has completed.
+- Make errors recoverable and preserve user input when possible.
+- Do not allow an assistant surface to obscure primary actions, forms, or key content.
+
+A floating assistant dock can work for a workspace when it is compact, non-blocking, keyboard-accessible, and context-aware. It should not be the default solution for every app.
+
+## 7. Forms and multi-step flows
+
+- Group fields by user intent, not by backend schema.
+- Use clear labels, examples only where useful, and inline validation with actionable error messages.
+- Indicate required and optional fields without ambiguity.
+- Keep the primary action consistent and explicit.
+- In multi-step flows, show progress and preserve entered data when moving backward.
+- Avoid unnecessary fields and decorative descriptions that slow completion.
+- Make success state and the next step clear.
+
+## 8. States and feedback
+
+Design these as part of each feature:
+
+- **Loading:** skeleton or concise progress indicator that reflects the content structure; do not flash a spinner for everything.
+- **Empty:** explain why there is no content and offer a relevant next action.
+- **No results:** explain how to adjust filters or search.
+- **Error:** say what failed in useful language, preserve work, and provide retry or recovery where possible.
+- **Success:** confirm the actual completed action and explain what changed.
+- **Disabled:** make it clear what is unavailable and, when appropriate, why.
+- **Selected/active:** use a consistent visual indicator that does not rely on color alone.
+
+
+=======================================================================
+FILE: references/anti-patterns.md
+URL:  https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/anti-patterns.md
+=======================================================================
+
+# Anti-Patterns: Avoid the Generic AI-Generated Look
+
+This reference is a **defensive checklist**, not a visual style guide. Its purpose is to help the Snippetz Labs design skill avoid the familiar combinations that make otherwise polished websites feel templated, synthetic, generic, untrustworthy, or unfinished.
+
+## The governing rule
+
+Do not use the patterns below as defaults, shortcuts, or filler. Before adding a visual treatment, section, claim, animation, or interaction, ask:
+
+1. Does it serve a specific user task or communicate something real about this product?
+2. Is it supported by the product's actual brand, content, data, and capabilities?
+3. Does it improve comprehension, trust, orientation, or use—not merely make a screenshot look busier or more impressive?
+4. Would the interface still feel distinctive if this effect or component were removed?
+
+If a pattern has no product-specific reason, remove it. Prefer a clear, specific, slightly unusual solution over a familiar template assembled from fashionable effects.
+
+**These are not universal bans.** Dark mode, gradients, cards, rounded corners, animation, testimonials, pricing tables, bento layouts, or a conventional hero can all be appropriate. Use them only when the audience, product, content, brand, or tested interaction justifies them. The problem is unearned repetition and formulaic combinations—not the existence of a design technique. Do not force novelty for its own sake.
+
+---
+
+## 1. Visual clichés and borrowed aesthetics (1–20)
+
+1. Purple-to-blue gradient backgrounds everywhere.
+2. Gradient text used on the main headline by default.
+3. Neon purple or blue glows behind ordinary UI elements.
+4. Frosted-glass cards with excessive backdrop blur.
+5. Dark mode as the default for every product, even when it does not suit the audience or context.
+6. Beige, cream, and burnt-orange palettes used simply to imitate a current AI-design trend.
+7. Every card having exactly the same rounded corners regardless of hierarchy or function.
+8. Excessive use of pill-shaped buttons, badges, and labels.
+9. Soft shadows on literally everything.
+10. A cursor-following glow that serves no useful purpose.
+11. Grain or noise texture added to make a plain background feel artificially premium.
+12. Random blobs, spheres, and abstract 3D shapes floating in the hero without a connection to the product.
+13. A thin colored line across the top or side of every card.
+14. Gradient borders around otherwise ordinary containers.
+15. Every element receiving a 1px border, whether it needs one or not.
+16. The same neutral sans-serif font used throughout every product without considering brand character or editorial hierarchy.
+17. Overused trendy font combinations, such as Space Grotesk with Instrument Serif, chosen without a brand reason.
+18. One random italic serif word inserted into an otherwise sans-serif headline just to signal sophistication.
+19. Overly spaced uppercase text used for every section label.
+20. A polished visual style with no recognizable product or brand identity.
+
+## 2. Formulaic landing-page structure (21–40)
+
+21. A centered hero headline with a tiny badge above it on every site.
+22. A huge headline split into exactly three lines regardless of the actual copy.
+23. A two-column hero with text on the left and a floating dashboard on the right as the automatic default.
+24. A fake product screenshot tilted in perspective.
+25. Three feature cards placed directly below every hero.
+26. Six identical cards arranged in a bento grid simply because bento layouts are fashionable.
+27. A feature section with an icon, heading, and paragraph repeated six times.
+28. Every section following exactly the same layout and visual rhythm.
+29. Alternating left-text/right-image sections throughout the entire page.
+30. A giant rounded rectangle containing the entire product preview without a structural reason.
+31. A floating notification card layered over a dashboard mockup purely for decoration.
+32. A logo strip containing imaginary companies or unsupported customer brands.
+33. A testimonial carousel with identical profile pictures, wording, and text lengths.
+34. A pricing section with three cards and the middle one highlighted by default, regardless of the actual pricing model.
+35. A large gradient CTA banner near the bottom simply to fill the final section.
+36. An FAQ section containing the same five predictable questions on every website.
+37. A footer with four or five perfectly symmetrical columns when the content does not call for them.
+38. Every section separated by enormous amounts of whitespace without regard to reading flow or content density.
+39. A long page that feels like a template stretched to fit more sections.
+40. A complete absence of an unusual, memorable, product-specific layout or point of view.
+
+## 3. Generic AI marketing copy (41–60)
+
+41. “Unlock the power of AI.”
+42. “Supercharge your workflow.”
+43. “Transform the way you work.”
+44. “Elevate your productivity.”
+45. “Your all-in-one platform.”
+46. “The future of [industry] is here.”
+47. “Revolutionize your experience.”
+48. “Seamlessly integrate everything.”
+49. “One platform. Endless possibilities.”
+50. “Built for the next generation.”
+51. Every headline following the “Not X. It's Y.” construction.
+52. Excessive use of em dashes.
+53. Every paragraph containing three carefully balanced benefits.
+54. Repeating the same benefit in the hero, features, CTA, and footer.
+55. Excessive use of words such as intelligent, powerful, seamless, effortless, innovative, and cutting-edge.
+56. Headlines that sound impressive but do not explain what the product actually does.
+57. Feature descriptions that describe only benefits and never explain actual functionality.
+58. Fake urgency, such as “Start your transformation today.”
+59. Generic CTA buttons such as “Get Started” repeated everywhere, without clarifying the action or destination.
+60. Copy that contains no specific audience, use case, limitation, workflow, or real-world detail.
+
+**Copy rule:** Write from observed product facts and the user's actual job-to-be-done. Prefer concrete nouns, verbs, workflows, examples, and honest limitations. Do not manufacture specificity either: when a fact is unknown, ask, omit it, or label the content as illustrative.
+
+## 4. Fake credibility and artificial content (61–80)
+
+61. “Trusted by 10,000+ users” without evidence.
+62. “99.9% uptime” on a product with no visible operational history or substantiation.
+63. Fake customer logos.
+64. Testimonials with suspiciously generic wording.
+65. Testimonials from people with no verifiable identity or company, presented as real.
+66. AI-generated profile pictures used as customer testimonials.
+67. Fake five-star ratings.
+68. A “Loved by thousands” section with no actual reviews or evidence.
+69. Fake usage statistics such as “2M+ tasks completed.”
+70. Fake activity notifications such as “Someone from New York just signed up.”
+71. A dashboard full of invented analytics and meaningless metrics presented as live data.
+72. Fake integrations with products that are not actually supported.
+73. Fake badges such as “SOC 2 Certified” or “Enterprise Ready.”
+74. An “As seen in” section featuring media logos without actual coverage.
+75. A fake team section with AI-generated faces presented as real employees or founders.
+76. An about page that says nothing about the actual founders, team, mission, or operating reality.
+77. Generic stock photography of people smiling at laptops when it does not represent the product or audience.
+78. AI-generated imagery with strange hands, inconsistent details, or nonsensical text.
+79. A blog containing dozens of generic SEO articles with no original insight, expertise, or editorial purpose.
+80. Case studies that lack real customers, measurable outcomes, specific context, or permission to make the claims.
+
+**Trust rule:** Never invent users, customers, people, partnerships, awards, reviews, integrations, security certifications, metrics, press coverage, performance history, or case-study outcomes. Use only claims that are supplied or verifiable. Clearly label sample content and synthetic/demo data. If genuine proof does not exist yet, explain the product, show the real workflow, and state what is still early instead of manufacturing social proof.
+
+## 5. Interaction, accessibility, and implementation failures (81–100)
+
+81. Every section fades in as the user scrolls.
+82. Every element slides upward when it enters the viewport.
+83. Random parallax effects on backgrounds.
+84. A button that glows instead of providing meaningful interaction feedback.
+85. Hover animations that are identical across every component.
+86. A loading spinner that never leads to a useful result.
+87. Buttons that look functional but do absolutely nothing.
+88. Navigation links that lead to empty pages or incorrect sections.
+89. No meaningful empty, loading, error, success, or disabled states.
+90. A mobile version that is simply the desktop layout stacked vertically.
+91. Text overflowing cards on smaller screens.
+92. A dashboard that breaks at tablet widths.
+93. Dropdowns and modals that feel disconnected from the rest of the interface.
+94. Forms with unclear labels, generic errors, or no validation feedback.
+95. Low contrast on muted text, badges, and secondary buttons.
+96. Icon-only controls with no accessible labels.
+97. Hover-only interactions with no keyboard equivalent.
+98. Inconsistent spacing and typography between different pages.
+99. A website that looks impressive in a screenshot but becomes awkward when actually used.
+100. No evidence that anyone tested the website with real content, real users, or real devices.
+
+**Experience rule:** A visible control must have a real, understandable outcome. Every relevant flow must account for loading, empty, error, success, disabled, and focus states. Design mobile and tablet as real contexts with deliberate changes to hierarchy, navigation, density, and controls—not as a desktop screenshot broken into a vertical stack. Test with the actual content shape and the available devices or viewport sizes; report honestly when user testing or device testing was not possible.
+
+---
+
+## How to apply this audit during implementation
+
+Do not mechanically search-and-delete every item. Review the design in context and classify each possible match:
+
+- **Remove:** the pattern is decorative, misleading, nonfunctional, repetitive, or unsupported.
+- **Replace:** the intent is useful, but the execution is generic. Keep the intent and create a more specific treatment.
+- **Keep with justification:** the pattern is genuinely appropriate and improves clarity, trust, accessibility, brand expression, or task completion. Keep it restrained and consistent.
+
+Before final delivery, perform a deliberate pass across all five groups:
+
+- **Visual identity:** Does this look like this product, or could the same screenshot belong to dozens of unrelated AI startups?
+- **Page composition:** Does the section order follow the user's decision journey and real content, or a memorized landing-page recipe?
+- **Language:** Could a visitor explain what the product does after reading the hero? Is every claim concrete and supportable?
+- **Credibility:** Is every logo, number, quote, person, badge, integration, and customer story real or clearly marked as illustrative?
+- **Usability:** Do all controls work? Are responsive layouts, accessibility, and all relevant system states accounted for?
+
+The goal is not to make a website deliberately strange. The goal is to make it **specific, coherent, honest, useful, and recognizably designed for its actual product and users**.
+
+
+=======================================================================
+FILE: references/implementation-playbook.md
+URL:  https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/implementation-playbook.md
+=======================================================================
+
+# Implementation Playbook
+
+Load this file when editing or building a real application. It is intentionally framework-aware but stack-agnostic: preserve the project's existing conventions and choose the simplest compatible implementation.
+
+## Contents
+
+- Repository reconnaissance
+- Design-system implementation
+- Component architecture
+- Visual implementation
+- Interaction behavior
+- Safe project changes
+- Verification
+
+## 1. Repository reconnaissance
+
+Before editing an existing project:
+
+1. Inspect the project root and available instructions (`AGENTS.md`, `README`, contribution guidance, package scripts, and equivalent files).
+2. Identify framework, routing, styling approach, component library, icon system, build tool, and package manager.
+3. Find global styles, theme tokens, shared layout components, and existing page patterns.
+4. Identify the requested route(s), nearby components, data source, and existing interaction logic.
+5. Note the current behavior that must be preserved.
+
+Do not assume the app uses React, Tailwind, Next.js, or a particular component library. Detect first.
+
+## 2. Design-system implementation
+
+Create or update one source of truth for:
+- Semantic colors and theme variants.
+- Typography family, scale, weight, and line height.
+- Spacing and layout constraints.
+- Radius, border, elevation, and focus treatment.
+- Motion durations and easing.
+- Component variants and state conventions.
+
+Prefer CSS custom properties or the project's token mechanism. Example starter structure:
+
+```css
+:root {
+  --color-canvas: #0b0d0c;
+  --color-surface: #141715;
+  --color-surface-raised: #1c201e;
+  --color-text: #f2f4f1;
+  --color-text-muted: #a0a6a0;
+  --color-border: #2b322d;
+  --color-accent: #a7f078;
+
+  --font-sans: "Geist", "Inter", system-ui, sans-serif;
+  --radius-card: 20px;
+  --radius-control: 12px;
+  --content-max: 1440px;
+  --space-unit: 4px;
+  --motion-fast: 160ms;
+  --motion-standard: 220ms;
+}
+```
+
+Treat this as an example, not an instruction to overwrite the project's existing tokens. Add a light/dark variant only if the product needs it. Use semantic variable names, not names tied to a single page or component.
+
+## 3. Component architecture
+
+Build components around repeated meaning and behavior. Typical candidates include:
+
+- `AppShell`, `Sidebar`, `Topbar`, `PageHeader`
+- `SectionHeader`, `Panel`, `StatCard`, `StatusBadge`
+- `ChartPanel`, `DataTable`, `FilterBar`, `EmptyState`
+- `Dialog`, `Popover`, `Toast`, `FormField`
+- `AssistantPanel` or contextual AI action when the product needs it
+
+Do not create an abstraction for every div. Reuse is valuable when components share behavior, semantics, and visual rules. Prefer a small set of well-defined variants over duplicated one-off CSS.
+
+## 4. Visual implementation
+
+- Use the existing CSS approach and conventions.
+- Keep styles close to the component or in the established design-system layer.
+- Use grid/flex layouts with fluid sizing; avoid brittle absolute positioning for core content.
+- Keep content width and gutters consistent across routes.
+- Use responsive units and `clamp()` where useful.
+- Avoid arbitrary z-index values; create a small layering scale for sticky elements, overlays, and dialogs.
+- Avoid huge one-off inline style objects and repeated raw color values.
+- Use existing assets first. Do not fetch random remote imagery or invent a brand logo.
+- For charts, reuse a project's charting library if present. If not, select a lightweight, compatible solution only when a real chart is required.
+- Ensure images have sensible aspect ratios, object positioning, loading behavior, and alt text.
+- Do not add fashionable treatments (gradient headlines, glass panels, glows, noise, arbitrary 3D objects, floating fake notifications, or scroll animations) unless they serve a clear brand or interaction purpose.
+- Use real product content and assets where available. Never fabricate testimonials, company logos, people, metrics, integrations, certifications, activity, or case studies. Mark demo data as demo data.
+
+## 5. Interaction behavior
+
+- Use semantic elements (`button`, `a`, `label`, `input`, `select`, etc.) whenever possible.
+- Every action button must be wired to the intended action.
+- Use the project's established state and data-fetching model.
+- Provide visible focus, hover, active, disabled, loading, error, and success behavior where relevant.
+- Keep form errors tied to their fields and announce important changes accessibly.
+- Do not fake network results, save states, authentication, or AI responses.
+- Use optimistic updates only when the project's data model supports rollback or error recovery.
+- Avoid global keyboard shortcuts that conflict with common browser or assistive-technology behavior.
+
+## 6. Safe project changes
+
+- Keep the scope aligned with the request; do not rewrite unrelated modules.
+- Do not remove an existing feature to make the design simpler.
+- Avoid dependency additions when native or existing project tools are sufficient.
+- Do not overwrite user work or secrets. Do not print environment variables or credentials.
+- Preserve routing, authentication, permissions, and data contracts.
+- Make reasonable assumptions for reversible visual choices; ask before destructive or irreversible changes.
+
+## 7. Verification
+
+Run the relevant existing checks, such as:
+
+- Formatter or lint command.
+- Type checker.
+- Component/unit tests.
+- Production build.
+- Browser-based desktop and mobile review when available.
+
+Fix issues caused by the changes. Run the anti-pattern audit in [anti-patterns.md](anti-patterns.md), then report checks that were actually run and distinguish code validation from visual validation. If the project cannot be run, say so and still inspect the implementation for obvious structural and responsive issues. Never claim real-user or real-device testing unless it actually happened.
+
+
+=======================================================================
+FILE: references/quality-gate.md
+URL:  https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/quality-gate.md
+=======================================================================
+
+# Snippetz UI Quality Gate
+
+Use this checklist before calling a design or implementation complete. A task does not need every item in every context; mark non-applicable items mentally and focus on the ones that matter.
+
+## 1. Product fit
+
+- [ ] The interface reflects the actual audience, product domain, and primary user task.
+- [ ] The visual skin is intentional and appropriate—not chosen by habit.
+- [ ] The important content and action are obvious in the first scan.
+- [ ] The design is inspired by references without mechanically copying them.
+- [ ] The page has a product-specific point of view; it does not rely on an unearned bundle of familiar AI-design clichés.
+- [ ] The anti-patterns reference has been reviewed; relevant matches are removed, replaced, or justified by a real product need.
+
+## 2. Visual system
+
+- [ ] Color, type, spacing, radius, borders, and motion follow a consistent token system.
+- [ ] There is one clear primary accent, with semantic colors used consistently.
+- [ ] Typography has a readable hierarchy and works at small sizes.
+- [ ] Primary, secondary, and tertiary content have distinct visual weights.
+- [ ] Panels and cards are used to organize information, not as decoration for every block.
+- [ ] Gradients, glow, blur, shadows, and 3D visuals are purposeful and restrained.
+
+## 3. Layout and responsiveness
+
+- [ ] Alignment, gutters, and spacing are consistent.
+- [ ] The page has a clear reading and interaction order.
+- [ ] Important content is not hidden below arbitrary fixed-height sections.
+- [ ] No unintended horizontal page overflow exists.
+- [ ] Navigation and multi-column regions adapt appropriately on mobile.
+- [ ] Tables, charts, dialogs, and assistant panels remain usable at narrow widths.
+
+## 4. Content and data
+
+- [ ] Labels explain what metrics represent.
+- [ ] Values include units, time periods, and comparisons where needed.
+- [ ] Charts use appropriate encodings and are not misleading.
+- [ ] Sample or placeholder data is explicitly identified.
+- [ ] No unverified claims, fake testimonials, invented records, fake people/logos, unsupported metrics, or pretend integrations are shown.
+- [ ] Sample or synthetic content is clearly labelled and cannot be mistaken for live customer proof or operational data.
+- [ ] Marketing copy describes the actual product, audience, workflows, capabilities, and limitations in concrete language.
+
+## 5. Interaction and accessibility
+
+- [ ] Every visible control has a real outcome.
+- [ ] Keyboard navigation and visible focus work.
+- [ ] Inputs have labels and useful validation messages.
+- [ ] Status is communicated with more than color alone.
+- [ ] Loading, empty, error, success, disabled, and selected states exist where applicable.
+- [ ] Motion is restrained, purposeful, non-repetitive, and reduced-motion preferences are respected.
+- [ ] No decorative animation, glow, parallax, or hover effect substitutes for meaningful state or interaction feedback.
+- [ ] Text and meaningful controls have adequate contrast.
+
+## 6. Engineering quality
+
+- [ ] Existing functionality and project conventions are preserved.
+- [ ] Components are reusable where that improves consistency.
+- [ ] No unnecessary dependency or duplicated design system was introduced.
+- [ ] Relevant lint, type, test, and build checks were run when available.
+- [ ] The rendered result was reviewed at relevant viewport sizes when a preview was available.
+- [ ] Realistic content lengths, edge cases, forms, menus, dropdowns, and dialogs were checked where applicable.
+- [ ] Any user/device testing not performed is disclosed rather than implied.
+- [ ] The final report accurately states what was implemented and verified.
+
+
+=======================================================================
+FILE: references/prompt-recipes.md
+URL:  https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/prompt-recipes.md
+=======================================================================
+
+# Prompt Recipes
+
+These are optional starting prompts. The Snippetz UI Design skill should already activate for relevant work; these prompts help users specify scope and intent.
+
+## Build a new product
+
+“Use the Snippetz Labs design philosophy to build [product]. The main users are [audience], and their primary task is [task]. Use [Obsidian/Botanical/Atmospheric/your recommended skin]. Build the essential routes and interactions, make it responsive, and use realistic clearly labelled sample data only where necessary.”
+
+## Redesign an existing application
+
+“Inspect the existing project before changing it. Apply the Snippetz Labs design DNA to [routes/areas]. Preserve the stack, working features, data contracts, and existing behavior. Improve hierarchy, typography, spacing, layout, and responsive states. Implement the changes and run the relevant checks.”
+
+## Translate visual references
+
+“Study the attached references and extract their visual principles—composition, typography, color, density, surfaces, charts, and visual storytelling. Do not copy them literally. Adapt the strongest principles to [product] and implement a cohesive, production-ready interface.”
+
+## Upgrade a dashboard
+
+“Redesign this dashboard around decisions users need to make. Prioritize the highest-value summary, key metrics, filters, the main visualization, supporting details, and actionable alerts. Improve scanability and mobile behavior without removing useful information or inventing data.”
+
+## Apply a consistent product skin
+
+“Define a semantic design-token system for this product, including colors, typography, spacing, radii, borders, shadows, and motion. Apply it consistently across all relevant routes and shared components while keeping each screen suited to its task.”
+
+## Polish a page without rebuilding it
+
+“Keep the current information architecture and behavior. Identify and fix the most important visual issues on this page: hierarchy, spacing, alignment, readability, state design, and responsive behavior. Avoid unnecessary dependencies or unrelated refactors.”
+

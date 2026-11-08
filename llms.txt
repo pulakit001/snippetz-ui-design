@@ -1,0 +1,19 @@
+# Snippetz Labs — Product UI Design Skill
+
+> A portable UI/UX design system for AI agents that design, build, or refine web products and applications. Covers an "engineered clarity with editorial character" design philosophy, per-product visual skins (Obsidian, Botanical, Atmospheric, Hybrid), semantic design tokens, complete visual-language rules, an adaptable product pattern library, a 100-item anti-patterns audit against generic AI-generated design, a stack-agnostic implementation playbook, and a pre-delivery quality gate.
+
+## Docs
+
+- [SKILL.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/SKILL.md): Skill entry point. Design philosophy, product skins, default tokens, typography, composition, interaction, accessibility, and the 8-step task workflow. Read this first.
+- [references/visual-language.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/visual-language.md): Detailed visual rules — design character, type scale, grid and spacing, semantic color roles, accent budget, borders/shadows/depth, motion, responsive breakpoints, WCAG 2.2 AA accessibility.
+- [references/pattern-library.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/pattern-library.md): Adaptable product patterns — marketing heroes, app shells and navigation, dashboards and analytics, data-heavy workspaces, monitoring and alerts, AI-assisted interfaces, forms, and system states.
+- [references/anti-patterns.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/anti-patterns.md): Defensive checklist of 100 clichés that make interfaces look AI-generated — visual clichés, formulaic page structure, generic marketing copy, fake credibility, and interaction/accessibility failures.
+- [references/implementation-playbook.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/implementation-playbook.md): Framework-aware, stack-agnostic build guidance — repo reconnaissance, token systems, component architecture, visual implementation, interaction behavior, safe project changes, verification.
+- [references/quality-gate.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/quality-gate.md): Pre-delivery checklist across product fit, visual system, layout/responsiveness, content credibility, interaction/accessibility, and engineering quality.
+- [references/prompt-recipes.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/references/prompt-recipes.md): Ready-made prompt patterns for common design tasks — build new product, redesign existing app, translate visual references, upgrade dashboard, apply consistent skin, polish a page.
+
+## Optional
+
+- [llms-full.txt](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/llms-full.txt): The entire skill (SKILL.md plus all references) bundled into one file for a single-fetch workflow.
+- [AGENTS.md](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/AGENTS.md): Short operating instructions for coding agents working inside a codebase with this design system.
+- [LICENSE](https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/LICENSE): MIT license — use, adapt, redistribute with attribution.
