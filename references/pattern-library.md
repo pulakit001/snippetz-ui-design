@@ -86,7 +86,7 @@ Use for admissions, education, CRM, project operations, catalogs, research tools
 - Put the task and collection name at the top.
 - Provide search, filters, and sorting near the list.
 - Keep records scannable with a strong primary field and consistently aligned secondary attributes.
-- Use status chips only for concise, standardized states.
+- Express status as plain typographic labels or quiet rectangular tags using the standard control radius—never pill-shaped chips or icon-plus-label status capsules (see [anti-patterns.md](anti-patterns.md) group 6).
 - Include clear empty, loading, no-results, and error experiences.
 - Use a full detail panel or focused detail route for deeper context rather than cramming every field into a card.
 - Keep selection, bulk actions, and pagination discoverable when those behaviors exist.

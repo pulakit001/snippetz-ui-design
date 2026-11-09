@@ -26,6 +26,7 @@ Key facts:
 - Use semantic design tokens; prefer the project's existing token system over a competing new one.
 - Never fabricate credibility: no invented users, logos, testimonials, metrics, badges, integrations, or people. Label sample data as sample data.
 - Every visible control must actually work; design loading, empty, error, success, disabled, and focus states.
+- Do not ship pill-shaped chips, badges, or tags; icon-plus-label status capsules; toy bevel or inner-shadow buttons; or bouncing-dot loaders. Icons must be distinctive rather than the default generated-app slate, earn their placement, and stay out of reading text. Required sample-data labels are plain typographic annotations, never stamps.
 - Design mobile deliberately, not as a stacked desktop page; never remove accessibility to look good.
 - Do not force clichés from the anti-patterns list, and do not force novelty for its own sake. Every pattern must either serve a product-specific reason or go.
 

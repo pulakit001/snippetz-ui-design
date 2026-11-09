@@ -19,6 +19,7 @@ Use this checklist before calling a design or implementation complete. A task do
 - [ ] Primary, secondary, and tertiary content have distinct visual weights.
 - [ ] Panels and cards are used to organize information, not as decoration for every block.
 - [ ] Gradients, glow, blur, shadows, and 3D visuals are purposeful and restrained.
+- [ ] No pill-shaped chips, badges, or stamps; no icon-plus-label status capsules; buttons are flat and precise (no candy fills, gloss, inner shadows, or bevels); icons are distinctive rather than the default generated-app slate and never decorate reading text.
 
 ## 3. Layout and responsiveness
 
@@ -46,6 +47,7 @@ Use this checklist before calling a design or implementation complete. A task do
 - [ ] Inputs have labels and useful validation messages.
 - [ ] Status is communicated with more than color alone.
 - [ ] Loading, empty, error, success, disabled, and selected states exist where applicable.
+- [ ] Loading states use content-shaped skeletons or concise progress—no bouncing-dot loaders—and sample/demo labels are plain text annotations, not stamped badges.
 - [ ] Motion is restrained, purposeful, non-repetitive, and reduced-motion preferences are respected.
 - [ ] No decorative animation, glow, parallax, or hover effect substitutes for meaningful state or interaction feedback.
 - [ ] Text and meaningful controls have adequate contrast.

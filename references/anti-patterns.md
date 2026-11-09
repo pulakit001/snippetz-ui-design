@@ -15,6 +15,8 @@ If a pattern has no product-specific reason, remove it. Prefer a clear, specific
 
 **These are not universal bans.** Dark mode, gradients, cards, rounded corners, animation, testimonials, pricing tables, bento layouts, or a conventional hero can all be appropriate. Use them only when the audience, product, content, brand, or tested interaction justifies them. The problem is unearned repetition and formulaic combinations—not the existence of a design technique. Do not force novelty for its own sake.
 
+**One exception — group 6 (101–107) is rejected outright.** Pill-shaped chips and badges, icon-plus-label status pills, decorative icon stitching, unchanged default icon libraries, toy bevel buttons, bouncing-dot loaders, and stamped sample/demo labels are the uniform of template-built, "vibe-coded" products. In Snippetz Labs work they are hard no-gos: their only accepted outcomes are Remove and Replace. The question is never "is this pill justified?" but "what replaces it with plain, rectangular, typographic treatment?"
+
 ---
 
 ## 1. Visual clichés and borrowed aesthetics (1–20)
@@ -140,6 +142,20 @@ If a pattern has no product-specific reason, remove it. Prefer a clear, specific
 
 ---
 
+## 6. Generated-product signature tells (101–107)
+
+These patterns are the recognizable signature of template-built, "vibe-coded" products. They are not treated as debatable defaults: in this system only **Remove** or **Replace** applies, and replacement means plain, rectangular, typographic treatment.
+
+101. Pill-shaped status capsules that pair an icon with a status word—for example a soft green outline pill containing a checkmark and "Available". Availability, membership, activity, and similar states are expressed in plain text or standard rectangular controls, never in icon capsules.
+102. Pill-shaped chips, badges, and tags of any kind: status pills, category chips, count capsules, filter chips, "NEW" or "BETA" stickers. Pill geometry itself is the tell. Labels belong in plain text rows, quiet rectangular tags with the product's standard control radius, or typographic hierarchy.
+103. Decorative icons stitched into reading text—an icon wedged before every metadata item, date, breadcrumb, section label, unit, or word count. Icons in this system clarify interactions and wayfinding; they do not decorate sentences or mimic the icon-row cadence of generated products.
+104. The unchanged default icon slate of generated products: the same ubiquitous icon library, stock stroke weight, and predictable icon picks as every other generated app. Icon style is part of brand identity—retune weight, size range, terminal and corner geometry, or adopt/derive a distinctive set so the interface's iconography is not a stock giveaway.
+105. Toy or skeuomorphic button styling: candy-colored fills, glossy highlights, inner shadows, beveled edges, and pressed-in 3D treatment. Buttons in this system are flat and precise—solid or quiet fills, restrained borders, and state changes expressed through color, weight, and contrast rather than faux depth.
+106. Bouncing-dot loaders: the rising-and-falling dots sequence as a progress state. Loading feedback must describe the actual work—content-shaped skeletons, a real progress indicator, or a concise text status.
+107. Stamped sample/demo labels rendered as decorative marks beside titles: "SAMPLE", "DEMO", "PREVIEW" chips and stamps. Identifying illustrative content remains mandatory (see the trust rule in section 4), but the label is expressed in plain typographic form—a muted text suffix, a caption, or an annotation line—never as a badge or stamp visual.
+
+---
+
 ## How to apply this audit during implementation
 
 Do not mechanically search-and-delete every item. Review the design in context and classify each possible match:
@@ -148,7 +164,9 @@ Do not mechanically search-and-delete every item. Review the design in context a
 - **Replace:** the intent is useful, but the execution is generic. Keep the intent and create a more specific treatment.
 - **Keep with justification:** the pattern is genuinely appropriate and improves clarity, trust, accessibility, brand expression, or task completion. Keep it restrained and consistent.
 
-Before final delivery, perform a deliberate pass across all five groups:
+For patterns 101–107, only **Remove** and **Replace** apply. They are the default signature of generated products and do not have a keep-with-justification outcome.
+
+Before final delivery, perform a deliberate pass across all six groups:
 
 - **Visual identity:** Does this look like this product, or could the same screenshot belong to dozens of unrelated AI startups?
 - **Page composition:** Does the section order follow the user's decision journey and real content, or a memorized landing-page recipe?

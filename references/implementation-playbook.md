@@ -83,6 +83,7 @@ Do not create an abstraction for every div. Reuse is valuable when components sh
 - For charts, reuse a project's charting library if present. If not, select a lightweight, compatible solution only when a real chart is required.
 - Ensure images have sensible aspect ratios, object positioning, loading behavior, and alt text.
 - Do not add fashionable treatments (gradient headlines, glass panels, glows, noise, arbitrary 3D objects, floating fake notifications, or scroll animations) unless they serve a clear brand or interaction purpose.
+- Do not style buttons with candy fills, glossy highlights, inner shadows, or beveled 3D treatment. Do not use pill-shaped chips, badges, tags, or stamps anywhere in the interface. Do not implement bouncing-dot loaders; loading feedback uses content-shaped skeletons, precise progress indicators, or text status.
 - Use real product content and assets where available. Never fabricate testimonials, company logos, people, metrics, integrations, certifications, activity, or case studies. Mark demo data as demo data.
 
 ## 5. Interaction behavior
@@ -93,6 +94,7 @@ Do not create an abstraction for every div. Reuse is valuable when components sh
 - Provide visible focus, hover, active, disabled, loading, error, and success behavior where relevant.
 - Keep form errors tied to their fields and announce important changes accessibly.
 - Do not fake network results, save states, authentication, or AI responses.
+- Loading feedback must carry real information: skeletons that mirror the incoming content structure, a precise progress indication, or a concise text status—never the bouncing-dots sequence.
 - Use optimistic updates only when the project's data model supports rollback or error recovery.
 - Avoid global keyboard shortcuts that conflict with common browser or assistive-technology behavior.
 

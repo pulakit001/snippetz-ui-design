@@ -1,6 +1,6 @@
 # Snippetz Labs — UI Design Skill
 
-A portable, AI-agent–ready product design system: the design DNA behind Snippetz Labs interfaces. It covers design philosophy, per-product visual skins, semantic design tokens, a complete visual-language reference, an adaptable pattern library, a 100-item anti-patterns audit against the generic AI-generated look, a stack-agnostic implementation playbook, and a pre-delivery quality gate.
+A portable, AI-agent–ready product design system: the design DNA behind Snippetz Labs interfaces. It covers design philosophy, per-product visual skins, semantic design tokens, a complete visual-language reference, an adaptable pattern library, a 107-item anti-patterns audit against the generic AI-generated look, a stack-agnostic implementation playbook, and a pre-delivery quality gate.
 
 Everything is plain markdown with stable URLs, structured specifically so an **AI agent can fetch it and reliably understand what the UI/UX system is and how to apply it**.
 
@@ -30,7 +30,7 @@ curl -fsSL https://raw.githubusercontent.com/pulakit001/snippetz-ui-design/main/
 | 1 | [`SKILL.md`](SKILL.md) | Entry point — philosophy, four product skins (Obsidian, Botanical, Atmospheric, Hybrid), default tokens, typography and composition rules, accessibility standards, and the 8-step design workflow. Read this first. |
 | 2 | [`references/visual-language.md`](references/visual-language.md) | Detailed visual rules — design character, type scale, grid/spacing, semantic color roles, accent budget, depth, motion, responsive breakpoints, WCAG 2.2 AA. |
 | 3 | [`references/pattern-library.md`](references/pattern-library.md) | Adaptable product patterns — marketing heroes, app shells, dashboards, data-heavy workspaces, monitoring/alerts, AI-assisted surfaces, forms, system states. |
-| 4 | [`references/anti-patterns.md`](references/anti-patterns.md) | A 100-item defensive audit of clichés that make interfaces look AI-generated — bad defaults, fake credibility, generic copy, broken responsiveness. Required review before delivery. |
+| 4 | [`references/anti-patterns.md`](references/anti-patterns.md) | A 107-item defensive audit of clichés that make interfaces look AI-generated — bad defaults, fake credibility, generic copy, broken responsiveness, plus the hard no-gos in group 6: pill chips/badges, icon status capsules, defaulted icon slates, toy bevel buttons, bouncing-dot loaders, and stamped sample labels. Required review before delivery. |
 | 5 | [`references/implementation-playbook.md`](references/implementation-playbook.md) | Build guidance — repo reconnaissance, token/system design, component architecture, interaction behavior, safe project changes, verification. |
 | 6 | [`references/quality-gate.md`](references/quality-gate.md) | The final checklist before any design or implementation task is called complete. |
 | — | [`references/prompt-recipes.md`](references/prompt-recipes.md) | Ready-made prompt patterns for build / redesign / polish / dashboard-upgrade tasks. |

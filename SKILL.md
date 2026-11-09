@@ -33,7 +33,7 @@ Apply these principles together:
 7. **Depth with restraint.** Use tonal layers, subtle borders, soft shadows, gradients, blur, or dimensional illustrations only when they establish hierarchy or a product-specific atmosphere.
 8. **A product has its own skin.** Maintain the Snippetz design DNA while adapting theme, density, imagery, and interaction patterns to the product's audience and domain.
 9. **Finish the experience.** Design loading, empty, error, success, hover, focus, active, disabled, and responsive states—not only the ideal desktop screenshot.
-10. **Avoid the generic AI look.** Reject unearned visual clichés, formulaic page recipes, vague marketing copy, fabricated proof, and decorative interactions. Make every design choice specific to the product and defensible by its users, content, or behavior. Use the full [anti-patterns checklist](references/anti-patterns.md) as a required review—not as a rigid ban on otherwise useful patterns.
+10. **Avoid the generic AI look.** Reject unearned visual clichés, formulaic page recipes, vague marketing copy, fabricated proof, and decorative interactions. Make every design choice specific to the product and defensible by its users, content, or behavior. Use the full [anti-patterns checklist](references/anti-patterns.md) as a required review—not as a rigid ban on otherwise useful patterns. Exception: group 6 of that file (patterns 101–107)—pill-shaped chips and badges, icon-plus-label status pills, decorative icon stitching, unchanged default icon slates, toy bevel buttons, bouncing-dot loaders, and stamped sample labels—are hard no-gos in Snippetz interfaces, because they are the default signature of generated products.
 
 ## 3. Visual reference interpretation
 
@@ -47,7 +47,7 @@ The supplied references are inspiration for principles, not assets to trace or i
 
 **Synthesize, do not collage.** Do not combine every reference's effects on one page. Choose the visual behavior that makes sense for the product, then apply it consistently. A distinctive result comes from product-specific composition and content, not from stacking fashionable effects.
 
-Before designing a full page, review [anti-patterns.md](references/anti-patterns.md). It documents 100 common visual, structural, copy, credibility, and usability patterns that can make an interface feel AI-generated. Avoid them when they are unearned or formulaic; retain a pattern only when it has a clear product-specific reason.
+Before designing a full page, review [anti-patterns.md](references/anti-patterns.md). It documents 107 common visual, structural, copy, credibility, and usability patterns that can make an interface feel AI-generated. Patterns 101–107 (pill chips and badges, icon-plus-label status pills, decorative icon stitching, defaulted icon slates, toy bevel buttons, bouncing-dot loaders, stamped sample labels) are rejected outright. Avoid the remaining patterns when they are unearned or formulaic; retain a pattern only when it has a clear product-specific reason.
 
 ## 4. Choose a product skin before styling
 
@@ -136,7 +136,7 @@ Start from these semantic tokens, then tune them to the product and existing cod
 | Desktop page gutter | 32–48px | Reduce progressively on smaller screens |
 | Card padding | 20–28px | Dense data cards may use 16–20px |
 | Card radius | 18–24px | Use less rounding for dense tables and technical surfaces |
-| Control radius | 10–14px | Pills only for compact statuses or genuinely pill-shaped actions |
+| Control radius | 10–14px | Never pill-shaped: chips, tags, and status labels use the standard rectangular geometry (see anti-patterns group 6) |
 | Floating overlay radius | 14–20px | Maintain clear separation and shadow hierarchy |
 | Control height | 40–48px | Keep repeated form controls consistent |
 | Focus ring | 2px visible ring | High contrast and never removed without replacement |
@@ -164,7 +164,7 @@ Think in page regions, not isolated components. Give each screen one dominant pu
 - Use alignment and repeated spacing to make complex screens feel calm.
 - Avoid giving every card identical visual weight. Use contrast, size, and placement to establish priority.
 - Use navigation patterns appropriate to the product: a compact top bar, persistent side rail, full sidebar, or mobile tab bar. Do not add navigation chrome merely because a reference contains it.
-- Use icons consistently, preferably from the project's existing icon set. Avoid mixing outline, solid, emoji, and custom icon styles without a reason.
+- Use icons consistently, preferably from the project's existing icon set. Avoid mixing outline, solid, emoji, and custom icon styles without a reason. Icon style is part of the product's identity: tune stroke weight, size range, terminal, and corner geometry—or adopt a distinctive set—so the iconography does not read as the unchanged default slate of generated products. Do not stitch decorative icons into reading text, and never pair an icon with a status word inside a chip or pill (see [anti-patterns.md](references/anti-patterns.md) group 6).
 
 For reusable page and component patterns, read [pattern-library.md](references/pattern-library.md).
 
@@ -228,7 +228,7 @@ Run the available lint, type-check, tests, and production build when practical. 
 
 Summarize what changed, the selected visual direction, important interaction/responsive behavior, validation performed, and any known gaps. Be specific and honest.
 
-For implementation details and framework-specific examples, read [implementation-playbook.md](references/implementation-playbook.md). For final review, use [quality-gate.md](references/quality-gate.md) and the 100-item [anti-patterns.md](references/anti-patterns.md).
+For implementation details and framework-specific examples, read [implementation-playbook.md](references/implementation-playbook.md). For final review, use [quality-gate.md](references/quality-gate.md) and the 107-item [anti-patterns.md](references/anti-patterns.md).
 
 ## 11. Non-negotiable quality rules
 
@@ -236,7 +236,7 @@ For implementation details and framework-specific examples, read [implementation
 - Do not make every page dark, every card rounded, every section a grid, or every interface look like an analytics dashboard.
 - Do not use gradients, glow, blur, 3D, glassmorphism, or neon as default decoration. Use them selectively and with purpose.
 - Do not create visual hierarchy through tiny low-contrast text or oversized empty space that hides useful content.
-- Do not overuse pills, badges, dividers, shadows, borders, or nested cards.
+- Do not use pill-shaped chips, badges, or tags; icon-plus-label status capsules; toy bevel or inner-shadow button styling; or bouncing-dot loaders. Do not overuse dividers, shadows, borders, or nested cards.
 - Do not use placeholder lorem ipsum or fake data to make a screen appear complete.
 - Do not remove existing working functionality while styling a project.
 - Do not call a page finished until its important states and responsive behavior have been considered.
